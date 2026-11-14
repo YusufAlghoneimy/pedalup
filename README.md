@@ -14,7 +14,7 @@ Diagram (ERD), and the PostgreSQL scripts that create the database and fill it w
 | 01 | Omar Khalaf | 16007086 |
 | 02 | Yahia Amr | 16010064 |
 | 03 | Yusuf Sherif | 16009152 |
-| 04 | Ziad Bahaa | 16009255 |
+| 04 | Zyad Bahaa | 16009569 |
 | 05 | Ahmed Mohamed | 16020371 |
 | 06 | Aley Shaheer | 16005419 |
 | 07 | Yusuf Osama | 16009255 |
