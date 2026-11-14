@@ -1,4 +1,4 @@
-# Smart Bike Rental App — PedalUp
+# Smart Bike Rental App - PedalUp
 
 **CSEN303 Software Engineering · German International University (GIU) · Milestone 2: Database Design**
 
@@ -9,16 +9,16 @@ Diagram (ERD), and the PostgreSQL scripts that create the database and fill it w
 
 ## Team
 
-| # | Name |
-|:-:|------|
-| 01 | Omar Khalaf |
-| 02 | Yahia Amr |
-| 03 | Yusuf Sherif |
-| 04 | Ziad Bahaa |
-| 05 | Ahmed Mohamed |
-| 06 | Aley Shaheer |
-| 07 | Yusuf Osama |
-| 08 | Omar Khashaba |
+| # | Name | ID |
+|:-:|------|:--:|
+| 01 | Omar Khalaf | 16007086 |
+| 02 | Yahia Amr | 16010064 |
+| 03 | Yusuf Sherif | 16009152 |
+| 04 | Ziad Bahaa | 16009255 |
+| 05 | Ahmed Mohamed | 16020371 |
+| 06 | Aley Shaheer | 16005419 |
+| 07 | Yusuf Osama | 16009255 |
+| 08 | Omar Khashaba | 16002667 |
 
 ---
 
@@ -40,7 +40,7 @@ smart-bike-rental-pedalup/
 
 ## Entity-Relationship Diagram
 
-**Editable source:** [`docs/erd.drawio`](docs/erd.drawio) — open it at [app.diagrams.net](https://app.diagrams.net)
+**Editable source:** [`docs/erd.drawio`](docs/erd.drawio) (open it at [app.diagrams.net](https://app.diagrams.net))
 
 ![ERD of the Smart Bike Rental App](docs/erd.png)
 
@@ -61,7 +61,7 @@ smart-bike-rental-pedalup/
 | Entity | User stories |
 |--------|--------------|
 | `riders` | US-001, US-002, US-003, US-017, US-021 |
-| `admins` | US-022 – US-028 |
+| `admins` | US-022 to US-028 |
 | `companies` | US-029, US-030 |
 | `id_verifications` | US-002, US-024 |
 | `notifications` | US-009, US-010, US-019, US-024 |
@@ -92,17 +92,17 @@ smart-bike-rental-pedalup/
 |---|---|
 | **DBMS** | PostgreSQL |
 | **Database name** | `smart_bike_rental` |
-| **Scripts** | `schema/` folder — run them in numeric order on an empty database |
+| **Scripts** | `schema/` folder, run in numeric order on an empty database |
 
 | Script | What it does |
 |--------|--------------|
 | [`01_create_tables.sql`](schema/01_create_tables.sql) | Creates all 19 tables in dependency order with primary keys, `UNIQUE` keys, `NOT NULL`, `DEFAULT`s and all 32 foreign keys with their `ON DELETE` rules |
 | [`02_constraints_indexes.sql`](schema/02_constraints_indexes.sql) | Adds business-rule `CHECK` constraints, partial unique indexes (one active ride per rider and per bike), an index on every foreign key, and query indexes |
-| [`03_seed_data.sql`](schema/03_seed_data.sql) | Inserts sample rows into every table (stations, docks, bikes, riders, rides, payments, …) |
+| [`03_seed_data.sql`](schema/03_seed_data.sql) | Inserts sample rows into every table (stations, docks, bikes, riders, rides, payments, ...) |
 
 ### How to run (pgAdmin 4)
 
-1. Right-click **Databases → Create → Database…**, name it `smart_bike_rental`, and save.
+1. Right-click **Databases → Create → Database...**, name it `smart_bike_rental`, and save.
 2. Select the database and open **Tools → Query Tool**.
 3. Open each script (folder icon) in numeric order and run it with **F5**.
 4. Refresh **Schemas → public → Tables**: **19 tables** are listed. Script 03 ends by printing the row count of every table.
