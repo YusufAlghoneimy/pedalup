@@ -1,4 +1,4 @@
-# Smart Bike Rental App - PedalUp
+# Smart Bike Rental App  PedalUp
 
 **CSEN303 Software Engineering · German International University (GIU) · Milestone 2: Database Design**
 
